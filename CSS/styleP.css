@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+ /*Espacio para los bg*/
+ .gradient {
+    background: linear-gradient(90deg, rgba(118,43,133,1) 0%, rgba(205,144,223,1) 60%);
+    height: 3px;
+ }
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#projects h2 {
+    margin-bottom: calc(2.5rem * 1.5);
+}
+
+@media (min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
